@@ -11,9 +11,11 @@
   "plugins": [
     {
       "name": "codeforge",
-      "description": "Claude Code 범용 SW 개발 오케스트레이션 플러그인 — 19 core agents + codeforge-review plugin · 7 lanes · overlay/preset",
-      "version": "0.18.0",
-      "author": { "name": "Josh" },
+      "description": "Claude Code 범용 SW 개발 오케스트레이션 플러그인 — 19 core 에이전트 + role:dev 동적 roster · 7 레인 구조로 요구사항부터 보안 테스트까지 자율 실행. Review subsystem은 별도 plugin codeforge-review로 추출 (CFP-29 Phase 1, BREAKING) · Inter-plugin Contract review_verdict v1 (ADR-008) · Plugin self-application dogfooding · Overlay + preset · project.yaml structured 상수 (SessionStart hook schema 검증 + Project Config Packet 자동 주입) · GitHub Actions CI.",
+      "version": "0.21.0",
+      "author": {
+        "name": "Josh"
+      },
       "source": {
         "source": "github",
         "repo": "mclayer/plugin-codeforge"
@@ -23,7 +25,9 @@
       "name": "codeforge-review",
       "description": "codeforge core의 lane-agnostic review subsystem (3 PL + 2 worker + base + 3 checklist). codeforge core 의존",
       "version": "0.2.0",
-      "author": { "name": "Josh" },
+      "author": {
+        "name": "Josh"
+      },
       "source": {
         "source": "github",
         "repo": "mclayer/plugin-codeforge-review"
