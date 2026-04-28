@@ -14,6 +14,7 @@
 | Plugin | Repo | 설명 |
 |---|---|---|
 | `codeforge` | [mclayer/plugin-codeforge](https://github.com/mclayer/plugin-codeforge) | 24 core agents · 7-lane orchestration · overlay/preset |
+| `codeforge-review` | [mclayer/plugin-codeforge-review](https://github.com/mclayer/plugin-codeforge-review) | lane-agnostic review subsystem (3 PL + 2 worker) — `codeforge` 의존 |
 
 ## 사용자 설치
 
