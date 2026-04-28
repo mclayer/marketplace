@@ -12,7 +12,7 @@
     {
       "name": "codeforge",
       "description": "Claude Code 범용 SW 개발 오케스트레이션 플러그인 — 19 core 에이전트 + role:dev 동적 roster · 7 레인 구조로 요구사항부터 보안 테스트까지 자율 실행. Review subsystem은 별도 plugin codeforge-review로 추출 (CFP-29 Phase 1, BREAKING) · Inter-plugin Contract review_verdict v1 (ADR-008) · Plugin self-application dogfooding · Overlay + preset · project.yaml structured 상수 (SessionStart hook schema 검증 + Project Config Packet 자동 주입) · GitHub Actions CI.",
-      "version": "2.0.0",
+      "version": "3.0.0",
       "author": {
         "name": "Josh"
       },
@@ -55,6 +55,18 @@
       "source": {
         "source": "github",
         "repo": "mclayer/plugin-codeforge-requirements"
+      }
+    },
+    {
+      "name": "codeforge-test",
+      "description": "codeforge ζ arc Test lane plugin (CFP-38) — TestAgent (functional + performance subset 병렬). 결과를 test_verdict v1 contract 로 Orchestrator 에 보고. Story §10 FIX Ledger append 는 Orchestrator 단독 (CFP-32 monopoly). codeforge core 의존.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Josh"
+      },
+      "source": {
+        "source": "github",
+        "repo": "mclayer/plugin-codeforge-test"
       }
     }
   ]
