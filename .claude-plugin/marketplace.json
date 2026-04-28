@@ -18,6 +18,16 @@
         "source": "github",
         "repo": "mclayer/plugin-codeforge"
       }
+    },
+    {
+      "name": "codeforge-review",
+      "description": "codeforge core의 lane-agnostic review subsystem (3 PL + 2 worker + base + 3 checklist). codeforge core 의존",
+      "version": "0.1.0",
+      "author": { "name": "Josh" },
+      "source": {
+        "source": "github",
+        "repo": "mclayer/plugin-codeforge-review"
+      }
     }
   ]
 }
