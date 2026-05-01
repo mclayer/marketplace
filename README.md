@@ -11,16 +11,16 @@
 
 ## 등재 플러그인
 
-`codeforge` 가 entry point. ζ arc 완료(CFP-40, 2026-04-29) 후 wrapper-only(Agent 0개)이며 6개 lane plugin 과 함께 설치돼야 동작한다. 6 lane plugin 미설치 시 SessionStart 의존성 체크에서 부재가 보고되며 해당 lane 진행 불가.
+`codeforge` 가 entry point. ζ arc 완료(CFP-40, 2026-04-29) + CFP-46 OperationalRiskArchitect 6th deputy (2026-04-30) + CFP-47 §8.5 Stateful test category + StatefulTestAgent split (2026-05-01) 후 wrapper-only(Agent 0개)이며 6개 lane plugin 과 함께 설치돼야 동작한다. 6 lane plugin 미설치 시 SessionStart 의존성 체크에서 부재가 보고되며 해당 lane 진행 불가.
 
 | Plugin | Repo | 설명 |
 |---|---|---|
-| `codeforge` | [mclayer/plugin-codeforge](https://github.com/mclayer/plugin-codeforge) | 7-lane orchestration entry point (wrapper-only, Agent 0개) — protocol/CI/schemas/bootstrap/Orchestrator instructions 보유. 아래 6 lane plugin 의존 |
+| `codeforge` | [mclayer/plugin-codeforge](https://github.com/mclayer/plugin-codeforge) | 7-lane orchestration entry point (wrapper-only, Agent 0개) — protocol/CI/schemas/bootstrap/Orchestrator instructions 보유. 아래 6 lane plugin 의존 (CFP-40 + CFP-46 + CFP-47) |
 | `codeforge-requirements` | [mclayer/plugin-codeforge-requirements](https://github.com/mclayer/plugin-codeforge-requirements) | Requirements lane — RequirementsPL + Domain + Analyst + Researcher 4 agent 병렬 (CFP-37) |
-| `codeforge-design` | [mclayer/plugin-codeforge-design](https://github.com/mclayer/plugin-codeforge-design) | Design lane — ArchitectPL + ArchitectAgent (chief author) + 5 deputies + Change Plan / ADR templates (CFP-40) |
+| `codeforge-design` | [mclayer/plugin-codeforge-design](https://github.com/mclayer/plugin-codeforge-design) | Design lane — ArchitectPL + ArchitectAgent (chief author) + 6 deputies (CodebaseMapper · Refactor · SecurityArch · OperationalRiskArch · TestContractArch · DataMigrationArch) + Change Plan / ADR templates (CFP-40 + CFP-46 + CFP-47) |
 | `codeforge-review` | [mclayer/plugin-codeforge-review](https://github.com/mclayer/plugin-codeforge-review) | Review subsystem (3 PL + 2 lane-agnostic worker) — design/code/security 공통 (CFP-29 + CFP-35) |
 | `codeforge-develop` | [mclayer/plugin-codeforge-develop](https://github.com/mclayer/plugin-codeforge-develop) | Develop lane — DeveloperPL + QADev + 3 role:dev core + presets/webapp (CFP-39) |
-| `codeforge-test` | [mclayer/plugin-codeforge-test](https://github.com/mclayer/plugin-codeforge-test) | Test lane — TestAgent (functional + performance subset 병렬, test_verdict v1) (CFP-38) |
+| `codeforge-test` | [mclayer/plugin-codeforge-test](https://github.com/mclayer/plugin-codeforge-test) | Test lane — TestAgent (functional/integration/infra/perf) + StatefulTestAgent (long-running + restart invariant — §8.5 CONDITIONAL). test-verdict v1.1 producer (CFP-38 + CFP-47) |
 | `codeforge-pmo` | [mclayer/plugin-codeforge-pmo](https://github.com/mclayer/plugin-codeforge-pmo) | Cross-cutting PMO — Epic 분해 자문 + Story 회고 + Cross-Story 패턴 분석 + ADR 후보 발의 (CFP-36) |
 
 ## 사용자 설치

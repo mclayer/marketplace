@@ -11,8 +11,8 @@
   "plugins": [
     {
       "name": "codeforge",
-      "description": "Claude Code SW 개발 오케스트레이션 wrapper-only plugin. ζ arc 완료 (CFP-40, 2026-04-29). Agent 0개 — protocol/CI/schemas/bootstrap/Orchestrator instructions 만 보유. 6 lane plugin 의존: codeforge-{requirements,design,develop,test,review,pmo}. Inter-plugin contract 6종 + invariant SSOT 3종 (ADR-008/009).",
-      "version": "5.0.1",
+      "description": "Claude Code SW 개발 오케스트레이션 wrapper-only plugin. ζ arc 완료 (CFP-40, 2026-04-29) + CFP-46 OperationalRiskArchitect 6th deputy + §7.4 / §11.6 idempotency CONDITIONAL (2026-04-30) + CFP-47 §8.5 Stateful / restart invariant test category + StatefulTestAgent split (2026-04-30). Agent 0개 — protocol/CI/schemas/bootstrap/Orchestrator instructions 만 보유. 6 lane plugin 의존: codeforge-{requirements,design,develop,test,review,pmo}. Inter-plugin contract 6 entry / 8 file + invariant SSOT 3종 (ADR-008/009/010/012/013/014/015).",
+      "version": "5.2.0",
       "author": {
         "name": "Josh"
       },
@@ -59,8 +59,8 @@
     },
     {
       "name": "codeforge-test",
-      "description": "codeforge ζ arc Test lane plugin (CFP-38) — TestAgent (functional + performance subset 병렬). 결과를 test_verdict v1 contract 로 Orchestrator 에 보고. Story §10 FIX Ledger append 는 Orchestrator 단독 (CFP-32 monopoly). codeforge core 의존.",
-      "version": "0.1.0",
+      "description": "codeforge ζ arc Test lane plugin (CFP-38, simplest lane + CFP-47 StatefulTestAgent split). 2 agent: TestAgent (functional/integration/infra/perf) + StatefulTestAgent (long-running + restart invariant — §8.5 CONDITIONAL). TestPL 미도입 — Orchestrator 직접 spawn 병렬. test-verdict v1.1 (additive minor) producer. codeforge core 의존.",
+      "version": "0.2.0",
       "author": {
         "name": "Josh"
       },
@@ -83,8 +83,8 @@
     },
     {
       "name": "codeforge-design",
-      "description": "codeforge ζ arc Design lane plugin (CFP-40, LAST) — ArchitectPLAgent + ArchitectAgent (chief author) + 5 deputies (CodebaseMapper · Refactor · SecurityArch · TestContractArch · DataMigrationArch). Change Plan + ADR templates owned. Story §3/§7 mirror + §11 데이터 마이그레이션 mirror self-write. codeforge core 의존.",
-      "version": "0.1.0",
+      "description": "codeforge ζ arc Design lane plugin (CFP-40, LAST + CFP-46 OperationalRiskArchitect 6th deputy + CFP-47 TestContractArch §8.5 mandate 확장) — ArchitectPLAgent + ArchitectAgent (chief author) + 6 deputies (CodebaseMapper · Refactor · SecurityArch · OperationalRiskArch · TestContractArch · DataMigrationArch). Change Plan + ADR templates owned. Story §3/§7 (incl. §7.4 운영리스크) + §8 (incl. §8.5 stateful) + §11 데이터 마이그레이션 (incl. §11.6 idempotency CONDITIONAL) mirror self-write. codeforge core 의존.",
+      "version": "0.3.0",
       "author": {
         "name": "Josh"
       },
