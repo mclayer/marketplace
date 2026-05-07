@@ -12,7 +12,7 @@
     {
       "name": "codeforge",
       "description": "Claude Code SW 개발 오케스트레이션 wrapper-only plugin. ζ arc 완료 (CFP-40, 2026-04-29) + CFP-46 OperationalRiskArchitect 6th deputy + §7.4 / §11.6 idempotency CONDITIONAL (2026-04-30) + CFP-47 §8.5 Stateful / restart invariant test category + StatefulTestAgent split (2026-04-30). Agent 0개 — protocol/CI/schemas/bootstrap/Orchestrator instructions 만 보유. 6 lane plugin 의존: codeforge-{requirements,design,develop,test,review,pmo}. Inter-plugin contract 6 entry / 8 file + invariant SSOT 3종 (ADR-008/009/010/012/013/014/015).",
-      "version": "5.2.0",
+      "version": "5.3.0",
       "author": {
         "name": "Josh"
       },
@@ -24,7 +24,7 @@
     {
       "name": "codeforge-review",
       "description": "codeforge core의 lane-agnostic review subsystem (3 PL + 2 worker + base + 3 checklist). codeforge core 의존. CFP-35 v2 BREAKING — PL self-write (Story §9 + GitHub comment + gate label 직접). ADR-001 lane-agnostic + ADR-008 contract versioning + CFP-29 추출 + CFP-35 ζ arc retrofit.",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Josh"
       },
@@ -72,7 +72,7 @@
     {
       "name": "codeforge-develop",
       "description": "codeforge ζ arc Develop lane plugin (CFP-39) — DeveloperPLAgent + QADeveloperAgent + 3 role:dev core (Developer/DataEng/InfraEng) + presets/webapp (Backend/Frontend Developer). 동적 roster discovery + Story §8/§8.5 self-write + Phase 2 PR open. codeforge core 의존.",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "author": {
         "name": "Josh"
       },
@@ -84,7 +84,7 @@
     {
       "name": "codeforge-design",
       "description": "codeforge ζ arc Design lane plugin (CFP-40, LAST + CFP-46 OperationalRiskArchitect 6th deputy + CFP-47 TestContractArch §8.5 mandate 확장) — ArchitectPLAgent + ArchitectAgent (chief author) + 6 deputies (CodebaseMapper · Refactor · SecurityArch · OperationalRiskArch · TestContractArch · DataMigrationArch). Change Plan + ADR templates owned. Story §3/§7 (incl. §7.4 운영리스크) + §8 (incl. §8.5 stateful) + §11 데이터 마이그레이션 (incl. §11.6 idempotency CONDITIONAL) mirror self-write. codeforge core 의존.",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "author": {
         "name": "Josh"
       },
