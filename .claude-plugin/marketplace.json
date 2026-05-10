@@ -59,8 +59,8 @@
     },
     {
       "name": "codeforge-test",
-      "description": "codeforge ζ arc Test lane plugin (CFP-38, simplest lane + CFP-47 StatefulTestAgent split). 2 agent: TestAgent (functional/integration/infra/perf) + StatefulTestAgent (long-running + restart invariant — §8.5 CONDITIONAL). TestPL 미도입 — Orchestrator 직접 spawn 병렬. test-verdict v1.1 (additive minor) producer. codeforge core 의존.",
-      "version": "0.2.0",
+      "description": "codeforge 통합테스트 lane plugin (CFP-367 / ADR-055). 1 active agent: IntegrationTestAgent (Sonnet) — §8.6 계약 이행 + tests/integration/ 전체 suite 동적 실행(docker-compose.test.yml) + regression 검증. 2 deprecated: TestAgent / StatefulTestAgent (ADR-048 Amendment 1, 역사 보존). test-verdict v2 producer. codeforge core 의존.",
+      "version": "1.0.0",
       "author": {
         "name": "Josh"
       },
