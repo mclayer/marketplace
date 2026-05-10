@@ -59,8 +59,8 @@
     },
     {
       "name": "codeforge-test",
-      "description": "codeforge 통합테스트 lane plugin (CFP-367 / ADR-055). 1 active agent: IntegrationTestAgent (Sonnet) — §8.6 계약 이행 + tests/integration/ 전체 suite 동적 실행(docker-compose.test.yml) + regression 검증. 2 deprecated: TestAgent / StatefulTestAgent (ADR-048 Amendment 1, 역사 보존). test-verdict v2 producer. codeforge core 의존.",
-      "version": "1.0.0",
+      "description": "codeforge 통합테스트 lane plugin (CFP-367 / ADR-055). 1 active agent: IntegrationTestAgent (Sonnet) — §8.6 계약 이행 + tests/integration/ 전체 suite 동적 실행(docker-compose.test.yml) + regression 검증. 2 deprecated: TestAgent / StatefulTestAgent (ADR-048 Amendment 1, 역사 보존). test-verdict v2 producer. codeforge core 의존. + CFP-307 DocsAgent 잔존 참조 제거 (2026-05-10).",
+      "version": "1.0.1",
       "author": {
         "name": "Josh"
       },
@@ -71,8 +71,8 @@
     },
     {
       "name": "codeforge-develop",
-      "description": "codeforge ζ arc Develop lane plugin (CFP-39) — DeveloperPLAgent + QADeveloperAgent + 3 role:dev core (Developer/DataEng/InfraEng) + presets/webapp (Backend/Frontend Developer). 동적 roster discovery + Story §8/§8.5 self-write + Phase 2 PR open. codeforge core 의존. + CFP-317 DeveloperPLAgent PR pre-flight guard: main push 방지 + --base main 강제 (2026-05-10).",
-      "version": "0.4.0",
+      "description": "codeforge ζ arc Develop lane plugin (CFP-39) — DeveloperPLAgent + QADeveloperAgent + 3 role:dev core (Developer/DataEng/InfraEng) + presets/webapp (Backend/Frontend Developer). 동적 roster discovery + Story §8/§8.5 self-write + Phase 2 PR open. codeforge core 의존. + CFP-317 DeveloperPLAgent PR pre-flight guard: main push 방지 + --base main 강제 (2026-05-10). + CFP-307 DocsAgent 잔존 참조 제거 (2026-05-10).",
+      "version": "0.4.1",
       "author": {
         "name": "Josh"
       },
