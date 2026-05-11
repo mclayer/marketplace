@@ -47,8 +47,8 @@
     },
     {
       "name": "codeforge-requirements",
-      "description": "codeforge 요구사항 레인 — RequirementsPLAgent + DomainAgent + RequirementsAnalyst + ResearcherAgent + ChangeImpactAgent + FeasibilityAgent + ContinuityAgent. 7-way 병렬 관점 통합 (기존 4 + 코드 컨텍스트 3). Domain Knowledge + Story §2/§5/§6/§4.1/§4.2/§4.3 self-write. codeforge core 의존.",
-      "version": "0.3.0",
+      "description": "codeforge 요구사항 레인 — RequirementsPLAgent + DomainAgent + RequirementsAnalyst + ResearcherAgent + ChangeImpactAgent + FeasibilityAgent + ContinuityAgent. 7-way 병렬 관점 통합 (기존 4 + 코드 컨텍스트 3). Domain Knowledge + Story §2/§5/§6/§4.1/§4.2/§4.3 self-write. codeforge core 의존. + CFP-379 RequirementsPLAgent·DomainAgent·RequirementsAnalyst·ResearcherAgent·ChangeImpactAgent·FeasibilityAgent·ContinuityAgent Opus 승격 (ADR-042 Amendment 4, ADR-057, 2026-05-11).",
+      "version": "0.4.0",
       "author": {
         "name": "Josh"
       },
@@ -59,8 +59,8 @@
     },
     {
       "name": "codeforge-test",
-      "description": "codeforge Integration Test lane plugin (CFP-367 / ADR-055 — 부활). IntegrationTestAgent (Sonnet tier) 1 에이전트: §8.6 계약 이행 + docker-compose.test.yml 동적 실행 + 전체 suite regression + test-verdict-v2 생성. codeforge core 의존. + CFP-307 DocsAgent 잔존 참조 제거 (2026-05-10).",
-      "version": "1.0.1",
+      "description": "codeforge Integration Test lane plugin (CFP-367 / ADR-055 — 부활). IntegrationTestAgent (Sonnet tier) 1 에이전트: §8.6 계약 이행 + docker-compose.test.yml 동적 실행 + 전체 suite regression + test-verdict-v2 생성. codeforge core 의존. + CFP-307 DocsAgent 잔존 참조 제거 (2026-05-10). + CFP-379 IntegrationTestAgent·StatefulTestAgent rate-limit→Opus fallback 정책 적용 (ADR-057, 2026-05-11).",
+      "version": "1.0.2",
       "author": {
         "name": "Josh"
       },
@@ -71,8 +71,8 @@
     },
     {
       "name": "codeforge-develop",
-      "description": "codeforge ζ arc Develop lane plugin (CFP-39) — DeveloperPLAgent + QADeveloperAgent + 3 role:dev core (Developer/DataEng/InfraEng) + presets/webapp (Backend/Frontend Developer). 동적 roster discovery + Story §8/§8.5 self-write + Phase 2 PR open. codeforge core 의존. + CFP-317 DeveloperPLAgent PR pre-flight guard: main push 방지 + --base main 강제 (2026-05-10). + CFP-307 DocsAgent 잔존 참조 제거 (2026-05-10).",
-      "version": "0.4.1",
+      "description": "codeforge ζ arc Develop lane plugin (CFP-39) — DeveloperPLAgent + QADeveloperAgent + 3 role:dev core (Developer/DataEng/InfraEng) + presets/webapp (Backend/Frontend Developer). 동적 roster discovery + Story §8/§8.5 self-write + Phase 2 PR open. codeforge core 의존. + CFP-317 DeveloperPLAgent PR pre-flight guard: main push 방지 + --base main 강제 (2026-05-10). + CFP-307 DocsAgent 잔존 참조 제거 (2026-05-10). + CFP-379 DeveloperPLAgent Opus 승격 + Sonnet agent rate-limit→Opus fallback 정책 적용 (ADR-057, 2026-05-11).",
+      "version": "0.5.0",
       "author": {
         "name": "Josh"
       },
@@ -83,7 +83,7 @@
     },
     {
       "name": "codeforge-design",
-      "description": "codeforge ζ arc Design lane plugin (CFP-40, LAST + CFP-46 OperationalRiskArchitect 6th deputy + CFP-47 TestContractArch §8.5 mandate 확장) — ArchitectPLAgent + ArchitectAgent (chief author) + 6 deputies (CodebaseMapper · Refactor · SecurityArch · OperationalRiskArch · TestContractArch · DataMigrationArch). Change Plan + ADR templates owned. Story §3/§7 (incl. §7.4 운영리스크) + §8 (incl. §8.5 stateful) + §11 데이터 마이그레이션 (incl. §11.6 idempotency CONDITIONAL) mirror self-write. codeforge core 의존. + CFP-319 WS stream push_interval 실증 의무: ArchitectAgent lock-in 금지 + TestContractArch wiretap fixture 검토 + change-plan §8.5.1 체크리스트 (2026-05-10). + CFP-307 DocsAgent 잔존 참조 제거 (2026-05-10). + CFP-378 ArchitectAgent Phase 3.5 self-lint / ArchitectPLAgent §8.5 평가 / LiveOps·LiveOrdering reconciliation 경계 / ADR-014 Amendment 2 (2026-05-11).",
+      "description": "codeforge ζ arc Design lane plugin (CFP-40, LAST + CFP-46 OperationalRiskArchitect 6th deputy + CFP-47 TestContractArch §8.5 mandate 확장) — ArchitectPLAgent + ArchitectAgent (chief author) + 6 deputies (CodebaseMapper · Refactor · SecurityArch · OperationalRiskArch · TestContractArch · DataMigrationArch). Change Plan + ADR templates owned. Story §3/§7 (incl. §7.4 운영리스크) + §8 (incl. §8.5 stateful) + §11 데이터 마이그레이션 (incl. §11.6 idempotency CONDITIONAL) mirror self-write. codeforge core 의존. + CFP-319 WS stream push_interval 실증 의무: ArchitectAgent lock-in 금지 + TestContractArch wiretap fixture 검토 + change-plan §8.5.1 체크리스트 (2026-05-10). + CFP-307 DocsAgent 잔존 참조 제거 (2026-05-10). + CFP-378 ArchitectAgent Phase 3.5 self-lint / ArchitectPLAgent §8.5 평가 / LiveOps·LiveOrdering reconciliation 경계 / ADR-014 Amendment 2 (2026-05-11). + CFP-379 CodebaseMapperAgent·RefactorAgent Opus 승격 (ADR-042 Amendment 4, 2026-05-11).",
       "version": "0.6.0",
       "author": {
         "name": "Josh"
